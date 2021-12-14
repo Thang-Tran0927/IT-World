@@ -21,5 +21,6 @@ const highlightMenu = () => {
     // }
 };
 
+
 window.addEventListener('scroll', highlightMenu);
 window.addEventListener('click', highlightMenu);

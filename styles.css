@@ -1,5 +1,7 @@
 :root {
     --blueColor: #369ceb;
+    --blackColor: #131313;
+    --whiteColor: #fff; 
 }
 
 * {
@@ -14,7 +16,7 @@
     border-bottom: 4px solid var(--blueColor);
 }
 .navbar {
-    background-color: #131313;
+    background-color: var(--blackColor);
     height: 80px;
     display: flex;
     justify-content: center;
@@ -36,8 +38,54 @@
     padding: 0 50px;
 }
 
+/* dropdown Section */
+.dropdown {
+    position: relative;
+}
+.dropdown-menu {
+    padding: 0px 10px 10px;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    position: absolute;
+    color: var(--whiteColor);
+    left: 1.6rem;
+    top: 100%;
+    background-color: var(--blackColor);
+    opacity: 0;
+    transition: 0.3s ease-in, transform 0.15s ease-in;
+    transform: translateY(-13px);
+    pointer-events: none;
+}
+.dropdown >.nav_links:focus + .dropdown-menu{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.dropdown-item {
+    display:flex;
+    align-items:left;
+    flex-direction: column;
+    padding: 5px;
+
+}
+.dropdown-links {
+    text-decoration: none;
+    color: var(--whiteColor);
+    transition: 0.3s ease-in-out;
+}
+.dropdown-links:hover {
+    color: var(--blueColor);
+}
+.dropdown-content {
+    list-style: none;
+}
+
+
+
+
 #team_name {
-    color: #fff;
+    color: var(--whiteColor);
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -58,7 +106,7 @@
 }
 
 .nav_links {
-    color: #fff;
+    color: var(--whiteColor);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,7 +146,7 @@
 
 .team_heading {
     font-size: 100px;
-    color: #131313;
+    color: var(--blackColor);
     margin-bottom: 24px;
 }
 
@@ -109,7 +157,7 @@
 /* Personal Info Section */
 
 .personal_info {
-    background: #fff;
+    background: var(--whiteColor);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -119,7 +167,7 @@
 }
 
 .personal_info h1 {
-    color: #131313;
+    color: var(--blackColor);
     font-size: 2.5rem;
     padding-bottom: 50px;
 }
