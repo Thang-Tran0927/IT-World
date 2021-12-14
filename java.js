@@ -2,8 +2,8 @@ const highlightMenu = () => {
     const elem = document.querySelector('.highlight');
     const homeMenu = document.querySelector('#home-page');
     const teamMenu  = document.querySelector('#personal_info');
+    const ITMenu = document.querySelector('#it_tech')
     let scrollPos = window.scrollY;
-    console.log("it works")
     if (scrollPos < 600) {
         homeMenu.classList.add('highlight')
         teamMenu.classList.remove('highlight');

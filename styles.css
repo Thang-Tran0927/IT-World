@@ -43,12 +43,12 @@
     position: relative;
 }
 .dropdown-menu {
-    padding: 0px 10px 10px;
+    padding: 0px 10px 10px 5px;
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
     position: absolute;
     color: var(--whiteColor);
-    left: 1.6rem;
+    left: 1.2rem;
     top: 100%;
     background-color: var(--blackColor);
     opacity: 0;
@@ -66,7 +66,7 @@
     display:flex;
     align-items:left;
     flex-direction: column;
-    padding: 5px;
+    padding: 7px;
 
 }
 .dropdown-links {
