@@ -132,19 +132,20 @@
 }
 
 .cards {
+    opacity:0.5;
     margin: 10px;
     height: 300px;
     width: 515px;
     border-radius: 4px;
-    display: flex;
+    display:flex;
+    justify-items: center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     transition: 0.3s ease-in;
-    text-align: center;
+    
 }
 
 .cards:hover {
+    opacity:1;
     transform: scale(1.05);
     transition: all 0.3 ease-in;
 }
@@ -158,28 +159,6 @@
 .cards h2 {
     opacity:0;
     z-index:300;
-    position: center;
     font-size: 30px;
-    text-align: center;
+    text-align:center;
 }
-
-.cards img:hover {
-    opacity:1;
-    transition: all 0.3 ease-in;
-}
-
-.cards img {
-    z-index: 100;
-    position:sticky;
-    opacity:0.5;
-    font-size: 30px;
-}
-
-.cards p {
-    padding: 10px;
-}
-
-.info-wrapper {
-    padding:;
-}
-
