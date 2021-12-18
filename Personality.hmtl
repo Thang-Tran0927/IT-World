@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="personaility.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- navigation menu -->
+    <nav class="navbar">
+        <div class="nav_container">
+            <a href="" id="team_name">IT Hub</a>
+            <ul class="nav_menu">
+                <li class="nav_items">
+                    <a href="index.html" class="nav_links" id="home-page">Home</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#team" class="nav_links" id="personal_info">Team</a>
+                </li>
+                <li class="nav_items">
+                    <a href="IT_Tech.html" class="nav_links"  id="it_tech">IT Tech</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#project" class="nav_links" id="project">Project</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#Personalities" class="nav_links" id="personalities">Personalities</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+      <!-- Team name section -->
+      <div class="team_section" id="home">
+        <div class="container">
+            <h1 class="team_heading">IT Hub</h1>
+            <p class="team_description">About Us</p>
+        </div>
+    </div>
+<!--Personality-->
+<div class="personal_info" id="team">
+    <h1>About Us</h1>
+    <div class="wrapper">
+        <div class="cards">
+            
+                <center><h2>About Thang Tran</h2></center>
+                <ul>
+                    <li><span>1</span>Personality Test 1 Result</li>
+                    <li><span>2</span>Personality Test 2 Result</li>
+                    <li><span>3</span>Personality Test 3 Result</li>
+                    <li><span>4</span>Thoughts on the results</li>
+                </ul>    
+                
+            
+        </div>
+        <div class="cards">
+            <center><h2>About Minh Nguyen</h2></center>
+            <ul>
+                <li><span>1</span>Personality Test 1 Result</li>
+                <li><span>2</span>Personality Test 2 Result</li>
+                <li><span>3</span>Personality Test 3 Result</li>
+                <li><span>4</span>Thoughts on the results</li>
+            </ul>>
+        </div>
+
+        <div class="cards">
+            <center><h2>About Hoang Tran</h2></center>
+            <ul>
+                <li><span>1</span>Personality Test 1 Result</li>
+                <li><span>2</span>Personality Test 2 Result</li>
+                <li><span>3</span>Personality Test 3 Result</li>
+                <li><span>4</span>Thoughts on the results</li>
+            </ul>
+        </div>
+
+        <div class="cards">
+            <center><h2>About Quang  Le</h2></center>
+            <ul>
+                <li><span>1</span>Personality Test 1 Result</li>
+                <li><span>2</span>Personality Test 2 Result</li>
+                <li><span>3</span>Personality Test 3 Result</li>
+                <li><span>4</span>Thoughts on the results</li>
+            </ul>
+        </div>
+
+
+
+        </body>
+</html>
