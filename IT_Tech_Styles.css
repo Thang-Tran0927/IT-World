@@ -1,5 +1,5 @@
 :root {
-    --blueColor: #5f0cad;
+    --blueColor: #943ee4;
 }
 
 * {
@@ -127,44 +127,39 @@
 
 .wrapper {
     display: grid;
+    gap:20px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
 
 .cards {
+    opacity:0.5;
     margin: 10px;
     height: 300px;
     width: 515px;
     border-radius: 4px;
-    display: flex;
+    display:flex;
+    justify-items: center;
     flex-direction: column;
-    justify-content: center;
-    align-items: left;
     transition: 0.3s ease-in;
+    
 }
 
 .cards:hover {
+    opacity:1;
+    transform: scale(1.05);
+    transition: all 0.3 ease-in;
+}
+
+.cards:hover #theHeader {
+    opacity:1;
     transform: scale(1.05);
     transition: all 0.3 ease-in;
 }
 
 .cards h2 {
-    position:absolute;
+    opacity:0;
+    z-index:300;
     font-size: 30px;
-    text-align: center;
+    text-align:center;
 }
-
-.cards img {
-    position:sticky;
-    filter: blur(3px);
-    font-size: 30px;
-}
-
-.cards p {
-    padding: 10px;
-}
-
-.info-wrapper {
-    padding: 10px;
-}
-
