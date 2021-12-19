@@ -65,8 +65,8 @@
     width: 125px;
     text-decoration: none;
     height: 80px;
-    transition: all 0.3s ease
-    border-bottom: 4px solid
+    transition: all 0.3s ease;
+    border-bottom: 4px solid;
 }
 
 .nav_links:hover {
@@ -131,14 +131,13 @@
 }
 
 .cards {
-    font;
-    margin: 
+
     height: 300px;
     width: 1200px;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
-    justify-content:inter-word
+    justify-content:inter-word;
     transition: 0.3s ease-in;
     text-align:justify
 }
@@ -149,12 +148,6 @@
     border-color:black;
 }
 
-.cards h2 {
-    font-family: var(--)
-    position: absolute;
-    font-size: 30px;
-    text-align: center;
-}
 
 
 .cards img {
@@ -164,9 +157,7 @@
     font-size: 30px;
 }
 
-.cards p {
-   
-}
+
 
 .info-wrapper {
     padding-bottom:100px;

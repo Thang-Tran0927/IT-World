@@ -10,9 +10,9 @@
     scroll-behavior: smooth;
 }
 
-.highlight{
+/* .highlight{
     border-bottom: 4px solid var(--blueColor);
-}
+} */
 .navbar {
     background-color: #131313;
     height: 80px;
@@ -65,8 +65,7 @@
     width: 125px;
     text-decoration: none;
     height: 80px;
-    transition: all 0.3s ease
-    border-bottom: 4px solid
+    transition: all 0.3s ease;
 }
 
 .nav_links:hover {
