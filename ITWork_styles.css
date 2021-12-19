@@ -1,5 +1,7 @@
 :root {
-    --blueColor: #943ee4;
+    --blueColor: #ff7b00;
+    --blackColor: #131313;
+    --whiteColor: #fff;
 }
 
 * {
@@ -35,6 +37,52 @@
     margin: 0 auto;
     padding: 0 35px;
 }
+/* dropdown Section */
+.dropdown {
+    position: relative;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity:1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.dropdown-menu {
+    padding: 0px 10px 10px 5px;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    position: absolute;
+    color: var(--whiteColor);
+    left: 1.2rem;
+    top: 100%;
+    background-color: var(--blackColor);
+    opacity: 0;
+    transition: 0.3s ease-in, transform 0.15s ease-in;
+    transform: translateY(-13px);
+    pointer-events: none;
+}
+
+
+.dropdown-item  {
+    display:flex;
+    align-items:left;
+    flex-direction: column;
+    padding: 7px;
+
+}
+.dropdown-links {
+    text-decoration: none;
+    color: var(--whiteColor);
+    transition: 0.3s ease-in-out;
+}
+.dropdown-links:hover {
+    color: var(--blueColor);
+}
+.dropdown-content {
+    list-style: none;
+}
 
 #team_name {
     color: #fff;
@@ -66,7 +114,6 @@
     text-decoration: none;
     height: 80px;
     transition: all 0.3s ease
-    border-bottom: 4px solid
 }
 
 .nav_links:hover {
@@ -83,7 +130,7 @@
 
 .team_section {
     background: var(--blueColor);
-    padding: 60px 0;
+    padding: 200px 0;
 }
 
 .container {
@@ -127,39 +174,38 @@
 
 .wrapper {
     display: grid;
-    gap:20px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
 
 .cards {
-    opacity:0.5;
+    background-color: var(--blueColor);
     margin: 10px;
-    height: 300px;
+    height: 650px;
     width: 515px;
     border-radius: 4px;
-    display:flex;
-    justify-items: center;
+    display: flex;
     flex-direction: column;
+    justify-content: left;
+    align-items: left;
     transition: 0.3s ease-in;
-    
 }
 
 .cards:hover {
-    opacity:1;
-    transform: scale(1.05);
-    transition: all 0.3 ease-in;
-}
-
-.cards:hover #theHeader {
-    opacity:1;
     transform: scale(1.05);
     transition: all 0.3 ease-in;
 }
 
 .cards h2 {
-    opacity:0;
-    z-index:300;
+    padding: 10px;
     font-size: 30px;
-    text-align:center;
+}
+
+.cards p {
+    padding: 10px;
+}
+
+.info-wrapper {
+    padding: 100px;
+    text-align:justify;
 }

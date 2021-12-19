@@ -1,5 +1,7 @@
 :root {
     --blueColor: #369ceb;
+    --blackColor: #131313;
+    --whiteColor: #fff;
 }
 
 * {
@@ -33,7 +35,53 @@
     width:100%;
     max-width: 1300px;
     margin: 0 auto;
-    padding: 0 50px;
+    padding: 0 35px;
+}
+/* dropdown Section */
+.dropdown {
+    position: relative;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity:1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.dropdown-menu {
+    padding: 0px 10px 10px 5px;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    position: absolute;
+    color: var(--whiteColor);
+    left: 1.2rem;
+    top: 100%;
+    background-color: var(--blackColor);
+    opacity: 0;
+    transition: 0.3s ease-in, transform 0.15s ease-in;
+    transform: translateY(-13px);
+    pointer-events: none;
+}
+
+
+.dropdown-item  {
+    display:flex;
+    align-items:left;
+    flex-direction: column;
+    padding: 7px;
+
+}
+.dropdown-links {
+    text-decoration: none;
+    color: var(--whiteColor);
+    transition: 0.3s ease-in-out;
+}
+.dropdown-links:hover {
+    color: var(--blueColor);
+}
+.dropdown-content {
+    list-style: none;
 }
 
 #team_name {
